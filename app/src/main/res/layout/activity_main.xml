@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#000"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/usernameID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="username"
-        android:textSize="30sp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:hint="Enter Username"
+        android:paddingLeft="5dp" />
 
     <EditText
         android:id="@+id/passwordID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="password"
-        android:textSize="30sp"
-        android:layout_marginTop="190dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp" />
 
     <Button
         android:id="@+id/loginID"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="28sp"
-        android:text="login"
-        android:layout_marginTop="290dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:text="Login"
+        android:textColor="#fff" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
