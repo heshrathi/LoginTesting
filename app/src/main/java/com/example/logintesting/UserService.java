@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 public interface UserService {
 
     @Headers("Content-type: application/json")
-    @FormUrlEncoded
+    //@FormUrlEncoded
     @POST("loginRestApi")
     Call<LoginResponse> userLogin(@Body LoginRequest loginRequest);
     //Call<LoginResponse> userLogin(@Field("username") String username, @Field("userpass") String userpass);
