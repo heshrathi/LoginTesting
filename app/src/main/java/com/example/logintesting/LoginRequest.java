@@ -28,7 +28,7 @@ public class LoginRequest {
         return username;
     }
 
-    public LoginRequest(String username, String password) {
+    public LoginRequest() {
         this.username = username;
         this.password = password;
     }

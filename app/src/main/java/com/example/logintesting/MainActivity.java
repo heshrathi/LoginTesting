@@ -48,11 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void login() {
-        //LoginRequest loginRequest = new LoginRequest();
-        //loginRequest.setUsername(username.getText().toString());
-        //loginRequest.setPassword(password.getText().toString());
+        LoginRequest loginRequest = new LoginRequest();
+        loginRequest.setUsername(username.getText().toString());
+        loginRequest.setPassword(password.getText().toString());
 
-        Call<LoginResponse> loginResponseCall = APIClient.getUserService().userLogin(username.getText().toString(), password.getText().toString());
+        Call<LoginResponse> loginResponseCall = APIClient.getUserService().userLogin(loginRequest);
+        //Call<LoginResponse> loginResponseCall = APIClient.getUserService().userLogin(username.getText().toString(), password.getText().toString());
         loginResponseCall.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
